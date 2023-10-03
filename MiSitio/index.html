@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <!-- Enlazamos los CDN de Bootstrap para estilos -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilo personalizado para el jumbotron */
+        .jumbotron {
+            background: url("https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg") no-repeat center;
+            background-size: cover;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Estilo para el fondo semitransparente del texto en el jumbotron */
+        .jumbotron-text {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        /* Estilo de marca de agua para la imagen del jumbotron */
+        .jumbotron::after {
+            content: "";
+            background: url("https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg") no-repeat center;
+            opacity: 0.3;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #58B2AF;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <a class="navbar-brand" href="equipo.html">Equipo</a>
+            <a class="navbar-brand" href="noticias.html">Noticias</a>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Bienvenido a nuestro sitio web</h1>
+            <p class="lead">Explora nuestro proyecto y descubre más sobre nosotros.</p>
+            <p class="jumbotron-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod justo nec aliquam.</p>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="container" style="background-color: white; padding: 20px;">
+        <h2>Conócenos</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id quam at elit bibendum vestibulum.</p>
+        <p>Proin a libero a justo pretium tincidunt. Sed aliquet mi at odio tincidunt, nec bibendum tortor cursus.</p>
+        <p>Etiam interdum elit id purus placerat, non efficitur erat dictum. Aenean sit amet magna vitae ante mattis.</p>
+
+        <!-- Video de YouTube -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/K5pkkuiyRzk" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Script para enlazar el CDN de Bootstrap para scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
